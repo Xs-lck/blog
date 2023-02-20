@@ -1,0 +1,31 @@
+@import './mixin.less';
+@import './var.less';
+.message{
+    .self-center();
+    z-index: 999;
+    color: #fff;
+    box-shadow: -2px 3px 5px rgba(0, 0, 0, .5);
+    padding: 10px 15px;
+    display: flex;
+    line-height: 2;
+    border-radius: 5px;
+    align-items: center;
+    transition: all .4s;
+    transform: translate(-50%, -50%) translateY(15px);
+    opacity: 0;
+    .iconStyle{
+        margin-right: 6px;
+    }
+    &-info{
+        background-color: @primary;
+    };
+    &-success{
+        background-color: @success;
+    };
+    &-error{
+        background-color: @danger;
+    };
+    &-warn{
+        background-color: @warn;
+    }
+}
